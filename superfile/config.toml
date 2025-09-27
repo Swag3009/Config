@@ -90,3 +90,5 @@ enable_md5_checksum = false
 #
 # Zoxide support for the fast navigation
 zoxide_support = false
+
+open_file = ["e", "enter"] 
