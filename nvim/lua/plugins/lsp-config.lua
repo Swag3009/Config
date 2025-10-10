@@ -157,5 +157,33 @@ return {
 			},
 		})
 		vim.lsp.enable("ts_ls")
+
+		-- tailwindcss_ls
+		vim.lsp.config("tailwindcss", {
+			filetypes = {
+				"html",
+				"css",
+				"javascript",
+				"javascriptreact",
+				"typescript",
+				"typescriptreact",
+				"vue",
+				"svelte",
+				"templ",
+			},
+			settings = {
+				tailwindCSS = {
+					includeLanguages = {
+						javascript = "javascript",
+						javascriptreact = "javascriptreact",
+						typescript = "typescript",
+						typescriptreact = "typescriptreact",
+						html = "html",
+						css = "css",
+					},
+				},
+			},
+		})
+		vim.lsp.enable("tailwindcss")
 	end,
 }

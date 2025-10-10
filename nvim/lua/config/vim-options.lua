@@ -59,6 +59,7 @@ vim.opt.expandtab = true
 vim.opt.smartindent = true
 vim.opt.wrap = true
 vim.opt.linebreak = true
+vim.opt.guicursor = "n:hor10,i:ver10,v:block"
 
 -- backup and undo
 vim.opt.swapfile = false
