@@ -174,14 +174,19 @@ return {
 			{
 				"<leader>ff",
 				function()
-					require("snacks").picker.files()
+					require("snacks").picker.files({
+						hidden = true,
+					})
 				end,
 				desc = "Find Files (Snacks Picker)",
 			},
 			{
 				"<leader>fc",
 				function()
-					require("snacks").picker.files({ cwd = "~/.config/nvim" })
+					require("snacks").picker.files({
+						cwd = "~/.config/nvim",
+						hidden = true,
+					})
 				end,
 				desc = "Find Config File",
 			},

@@ -14,7 +14,6 @@ vim.keymap.set("v", ">", ">gv", opts)
 vim.keymap.set("x", "<leader>p", [["_dP]])
 vim.keymap.set("v", "p", '"_dp', opts)
 vim.keymap.set("n", "<leader>Y", [["+Y]], opts)
-vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 vim.keymap.set("n", "<Esc>", ":nohl<CR>", { desc = "Clear search hl", silent = true })
 vim.keymap.set("n", "Q", "<nop>")
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
@@ -59,7 +58,7 @@ vim.opt.expandtab = true
 vim.opt.smartindent = true
 vim.opt.wrap = true
 vim.opt.linebreak = true
-vim.opt.guicursor = "n:hor10,i:ver10,v:block"
+vim.opt.guicursor = "n:block,i:ver10,v:block"
 
 -- backup and undo
 vim.opt.swapfile = false
@@ -97,3 +96,4 @@ vim.keymap.set({ "n", "v" }, "G", "G$", { desc = "Go to last line, last characte
 vim.opt.ignorecase = true
 vim.opt.wildignorecase = true
 vim.opt.smartcase = true
+vim.opt.laststatus = 3

@@ -112,6 +112,21 @@ return {
 		})
 		vim.lsp.enable("lua_ls")
 
+		-- Python (Pyright)
+		vim.lsp.config("pyright", {
+			settings = {
+				python = {
+					analysis = {
+						typeCheckingMode = "basic",
+						autoImportCompletions = true,
+						diagnosticMode = "workspace",
+						useLibraryCodeForTypes = true,
+					},
+				},
+			},
+		})
+		vim.lsp.enable("pyright")
+
 		-- emmet_language_server
 		vim.lsp.config("emmet_language_server", {
 			filetypes = {
